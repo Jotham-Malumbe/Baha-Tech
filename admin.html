@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin - Baha Technocom</title>
+
+<style>
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px;
+    background: #0a84ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.delete {
+    background: red;
+    margin-top: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>➕ Add Product</h2>
+
+<form id="productForm">
+    <input type="text" id="name" placeholder="Product Name" required>
+    <input type="number" id="price" placeholder="Price (Kshs)" required>
+    <input type="text" id="image" placeholder="Image URL (Cloudinary)" required>
+    <input type="text" id="alt" placeholder="SEO Alt Text" required>
+
+    <button type="submit">Add Product</button>
+</form>
+
+<h2>📦 Products</h2>
+<div id="productList"></div>
+
+<script>
+let products = JSON.parse(localStorage.getItem("adminProducts")) || [];
+
+// Render products
+function render() {
+    const list = document.getElementById("productList");
+    list.innerHTML = "";
+
+    products.forEach((p, index) => {
+        list.innerHTML += `
+            <div class="product">
+                <strong>${p.name}</strong><br>
+                Kshs. ${p.price}<br>
+                <button class="delete" onclick="removeProduct(${index})">Delete</button>
+            </div>
+        `;
+    });
+
+    localStorage.setItem("adminProducts", JSON.stringify(products));
+}
+
+// Add product
+document.getElementById("productForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const newProduct = {
+        id: Date.now(),
+        name: document.getElementById("name").value,
+        price: Number(document.getElementById("price").value),
+        image: document.getElementById("image").value,
+        alt: document.getElementById("alt").value
+    };
+
+    products.push(newProduct);
+
+    this.reset();
+    render();
+});
+
+// Delete product
+function removeProduct(index) {
+    products.splice(index, 1);
+    render();
+}
+
+render();
+</script>
+
+</body>
+</html>
