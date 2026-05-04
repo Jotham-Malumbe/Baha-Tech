@@ -248,6 +248,20 @@ function showPopup(text) {
 }
 
 // ================= INIT =================
-displayProducts(products);
-updateCartUI();
+// ================= INIT PRODUCTS (MERGED SOURCE) =================
+function loadAllProducts() {
+    const adminProducts = JSON.parse(localStorage.getItem("adminProducts")) || [];
 
+    // Merge static + admin products
+    const allProducts = [...products, ...adminProducts];
+
+    displayProducts(allProducts);
+}
+
+// INIT
+loadAllProducts();
+updateCartUI();
+// Refresh products when storage changes
+window.addEventListener("storage", function () {
+    loadAllProducts();
+});
