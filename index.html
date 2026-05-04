@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baha Technocom | Electronics & Phone Accessories in Emasatsi Market Kakamega</title>
+    <meta name="description" content="Buy affordable electronics and phone accessories from Baha Technocom in Emasatsi Market, Kakamega County. Order easily via WhatsApp and get fast delivery.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts (clean typography) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">
+        <h1>Baha Technocom</h1>
+        <span>Electronics & Phone Accessories</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon" id="cartIcon">
+        🛒 <span id="cartCount">0</span>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <h2>Affordable Electronics. Reliable Accessories.</h2>
+    <p>Your trusted plug for electronics & phone accessories in Emasatsi Market.</p>
+
+    <div class="hero-buttons">
+        <a href="tel:0115652612" class="btn primary">Call Now</a>
+        <a href="https://wa.me/254115652612" class="btn secondary" target="_blank">Chat on WhatsApp</a>
+    </div>
+</section>
+
+<!-- ================= SEARCH ================= -->
+<section class="search-section">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search for electronics or accessories..." 
+    >
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<main>
+    <section class="products" id="productContainer">
+        <!-- Products will be injected via JS -->
+    </section>
+
+    <p id="noResults" class="hidden">No products found.</p>
+</main>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart">✖</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+        <!-- Cart items injected via JS -->
+    </div>
+
+    <p id="emptyCartMessage">Your cart is empty.</p>
+
+    <!-- DELIVERY -->
+    <div class="cart-section">
+        <label for="deliveryOption">Delivery Option:</label>
+        <select id="deliveryOption">
+            <option value="pickup">Pickup (Free)</option>
+            <option value="Ebutindi-30">Ebutindi - Kshs. 30</option>
+            <option value="Emulunya-40">Emulunya - Kshs. 40</option>
+            <option value="Emuruba-50">Emuruba - Kshs. 50</option>
+            <option value="Ebutuku-50">Ebutuku - Kshs. 50</option>
+            <option value="Eshikwata-40">Eshikwata - Kshs. 40</option>
+            <option value="Eshinutsa-50">Eshinutsa - Kshs. 50</option>
+        </select>
+    </div>
+
+    <!-- LOCATION INPUT -->
+    <div class="cart-section hidden" id="locationSection">
+        <input type="text" id="deliveryLocation" placeholder="Enter delivery location">
+    </div>
+
+    <!-- TOTAL -->
+    <div class="cart-section">
+        <h4>Total: <span id="totalPrice">Kshs. 0</span></h4>
+    </div>
+
+    <!-- CUSTOMER INFO -->
+    <div class="cart-section">
+        <input type="text" id="customerName" placeholder="Your Name">
+        <input type="tel" id="customerPhone" placeholder="Your Phone Number">
+    </div>
+
+    <!-- TRUST NOTE -->
+    <p class="trust-note">
+        You will confirm your order on WhatsApp before it is processed.
+    </p>
+
+    <!-- CHECKOUT -->
+    <button id="checkoutBtn" class="btn primary full-width">
+        Place Order via WhatsApp
+    </button>
+
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+    <h3>What Our Customers Say</h3>
+
+    <div class="testimonial">
+        <p>“Great quality accessories and fast service. Highly recommend!”</p>
+        <span>- Local Customer</span>
+    </div>
+
+    <div class="testimonial">
+        <p>“Affordable prices and very reliable. My go-to electronics shop.”</p>
+        <span>- Happy Client</span>
+    </div>
+</section>
+
+<!-- ================= WHY SHOP ================= -->
+<section class="why-us">
+    <h3>Why Shop With Us?</h3>
+
+    <ul>
+        <li>✔ Affordable and genuine products</li>
+        <li>✔ Fast WhatsApp ordering</li>
+        <li>✔ Convenient delivery options</li>
+        <li>✔ Trusted local business</li>
+    </ul>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <h4>Baha Technocom</h4>
+    <p>Electronics & Phone Accessories</p>
+    <p>📍 Emasatsi Market, Kakamega County</p>
+    <p>📞 0115652612</p>
+
+    <p class="footer-note">
+        © 2026 Baha Technocom. All rights reserved.
+    </p>
+</footer>
+
+<!-- JS FILES -->
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+

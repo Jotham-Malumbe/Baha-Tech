@@ -1,0 +1,296 @@
+
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+.btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease;
+    text-align: center;
+}
+
+.btn.primary {
+    background: #0a84ff;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background: #006fe0;
+}
+
+.btn.secondary {
+    background: #25D366;
+    color: #fff;
+}
+
+.btn.secondary:hover {
+    background: #1ebe5d;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 18px;
+}
+
+.logo span {
+    font-size: 12px;
+    color: #666;
+}
+
+nav a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.cart-icon {
+    background: #0a84ff;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* ================= HERO ================= */
+.hero {
+    padding: 24px 16px;
+    text-align: center;
+    background: #fff;
+}
+
+.hero h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ================= SEARCH ================= */
+.search-section {
+    padding: 12px 16px;
+}
+
+.search-section input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* ================= PRODUCTS ================= */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px 16px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h4 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.product-card p {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* ================= CART DRAWER ================= */
+.cart-drawer {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 85%;
+    max-width: 400px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.1);
+    padding: 16px;
+    transition: right 0.3s ease;
+    z-index: 2000;
+    overflow-y: auto;
+}
+
+.cart-drawer.active {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-items {
+    margin: 12px 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.cart-section {
+    margin: 10px 0;
+}
+
+.cart-section input,
+.cart-section select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ================= OVERLAY ================= */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    z-index: 1500;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* ================= TESTIMONIALS ================= */
+.testimonials {
+    background: #fff;
+    padding: 20px 16px;
+}
+
+.testimonial {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.testimonial span {
+    color: #777;
+    font-size: 12px;
+}
+
+/* ================= WHY US ================= */
+.why-us {
+    padding: 20px 16px;
+}
+
+.why-us ul {
+    list-style: none;
+}
+
+.why-us li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #fff;
+    padding: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-note {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* ================= SIMPLE POPUP ================= */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0a84ff;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: none;
+    z-index: 3000;
+}
+
+/* ================= DESKTOP IMPROVEMENTS ================= */
+@media(min-width: 768px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+}
+
