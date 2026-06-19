@@ -140,7 +140,7 @@ const products = [
         name: "Tutor",
         price: 200,
         image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714175/IMG-20260521-WA0007_lhg5f6.jpg",
-        alt " Tutor- affordable electronics Kakamega"
+        alt: " Tutor- affordable electronics Kakamega"
     },
     {
         id: 21,
@@ -274,7 +274,7 @@ const products = [
         name: "Megaphone",
         price: 1000,
         image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714371/IMG-20260521-WA0025_gylisq.jpg",
-        alt " Megaphone- phone accessories Kakamega"
+        alt: " Megaphone- phone accessories Kakamega"
     },
     {
         id: 40,
