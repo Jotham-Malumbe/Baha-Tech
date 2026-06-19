@@ -6,98 +6,98 @@ const products = [
         id: 1,
         name: "Samsung Fast Charger",
         price: 800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714426/IMG-20260521-WA0030_gsdznb.jpg",
         alt: "Samsung fast charger - Baha Technocom Emasatsi"
     },
     {
         id: 2,
         name: "iPhone Lightning Cable",
         price: 600,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714432/IMG-20260521-WA0035_qnrfbq.jpg",
         alt: "iPhone lightning cable - Baha Technocom Kakamega"
     },
     {
         id: 3,
         name: "Wireless Bluetooth Earbuds",
         price: 1500,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714441/IMG-20260521-WA0040_lqvbic.jpg",
         alt: "Wireless bluetooth earbuds - electronics shop Emasatsi"
     },
     {
         id: 4,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714450/IMG-20260521-WA0034_bbvixd.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
         id: 5,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714474/IMG-20260521-WA0045_iayqpm.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
         id: 6,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714475/IMG-20260521-WA0037_kmfexn.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
         id: 7,
         name: "USB Flash Disk 32GB",
         price: 700,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714481/IMG-20260521-WA0043_rblhyh.jpg",
         alt: "32GB flash disk - electronics store Emasatsi"
     },
     {
         id: 8,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714489/IMG-20260521-WA0041_kijbmb.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
         id: 9,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714493/IMG-20260521-WA0039_wmijbv.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
         id: 10,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714519/IMG-20260521-WA0047_zprh2y.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
         id: 11,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714519/IMG-20260521-WA0044_oacrp4.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
         id: 12,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714520/IMG-20260521-WA0054_as1hv6.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
         id: 13,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714532/IMG-20260521-WA0055_vqdtwu.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
         id: 14,
         name: "Power Bank 10000mAh",
         price: 1800,
-        image: "https://res.cloudinary.com/demo/image/upload/v1/sample.jpg",
+        image: "https://res.cloudinary.com/dwaqbsthr/image/upload/q_auto/f_auto/v1779714535/IMG-20260521-WA0048_koyek1.jpg",
         alt: "10000mAh power bank - phone accessories Kakamega"
     },
     {
